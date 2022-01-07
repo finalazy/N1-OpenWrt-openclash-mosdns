@@ -19,3 +19,5 @@ svn co https://github.com/kiddin9/luci-app-dnsfilter/trunk package/luci-app-dnsf
 
 # Add luci-app-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
+
+git clone https://github.com/vernesong/OpenClash.git
