@@ -1,0 +1,10 @@
+config dnsfilter
+	option flash '0'
+	option block_ios '0'
+	option safe_search '0'
+	list url 'https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt'
+	list url 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt'
+	list url 'https://block.energized.pro/extensions/porn-lite/formats/domains.txt'
+	option block_cnshort '0'
+	option enable '1'
+	option cron_mode '0'
