@@ -21,3 +21,5 @@ svn co https://github.com/kiddin9/luci-app-dnsfilter/trunk package/luci-app-dnsf
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
 
 git clone https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
+
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
