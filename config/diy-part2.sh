@@ -22,4 +22,3 @@ svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passw
 
 git clone https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
