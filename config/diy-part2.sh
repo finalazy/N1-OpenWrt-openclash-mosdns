@@ -22,3 +22,5 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk package/luci-app-amlogic
 
 svn co https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 
+svn co https://github.com/jerrykuku/luci-theme-argon.git 
+
