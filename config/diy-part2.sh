@@ -9,16 +9,16 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 
 # Add haproxy
 rm -f package/feeds/packages/haproxy
-svn co https://github.com/nantayo/Haproxy/trunk package/feeds/packages/haproxy
+#svn co https://github.com/nantayo/Haproxy/trunk package/feeds/packages/haproxy
 
 # Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/luci-app-amlogic
 
 # Add luci-app-dnsfilter
-svn co https://github.com/kiddin9/luci-app-dnsfilter/trunk package/luci-app-dnsfilter
+#svn co https://github.com/kiddin9/luci-app-dnsfilter/trunk package/luci-app-dnsfilter
 
 # Add luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
 
 svn co https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 
