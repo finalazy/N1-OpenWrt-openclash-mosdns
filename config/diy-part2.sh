@@ -26,7 +26,7 @@ svn co https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclas
 
 rm -rf package/lean/luci-theme-argon
 
-svn co https://github.com/jerrykuku/luci-theme-argon.git 
+svn co https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 svn co https://github.com/chenhw2/luci-app-aliddns.git package/feeds/luci-app-aliddns
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
