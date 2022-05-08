@@ -18,9 +18,6 @@ sed -e "s/:0:0:99999:/:${days}:0:99999:/g"  -i /etc/shadow
 
 #sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
-# 设置amlogic源
-sed -i "s|https://github.com/wclmgcd/N1-OpenWrt|https://github.com/cjlhll/N1-OpenWrt|g" package/luci-app-amlogic/root/etc/config/amlogic
-
 # Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/luci-app-amlogic
 
