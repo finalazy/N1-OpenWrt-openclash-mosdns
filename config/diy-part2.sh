@@ -7,6 +7,10 @@ sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/auto
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generate
 
+#Modify default password
+# Modify default root's password（FROM 'password'[$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.] CHANGE TO 'your password'）
+sed -i 's/root::0:0:99999:7:::/root:$1$yMQfLKxB$gtGxa4n2QGmgIKjUB7q3m.:19120:0:99999:7:::/g' /etc/shadow
+
 #sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
 # Add haproxy
