@@ -9,7 +9,12 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 
 #Modify default password
 # Modify default root's password（FROM 'password'[$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.] CHANGE TO 'your password'）
-sed -i 's/root::0:0:99999:7:::/root:$1$yMQfLKxB$gtGxa4n2QGmgIKjUB7q3m.:19120:0:99999:7:::/g' /etc/shadow
+sed -i 's/root::0:0:99999:7:::/root:$1$yMQfLKxB$gtGxa4n2QGmgIKjUB7q3m.:0:0:99999:7:::/g' /etc/shadow
+
+#这代表是哪一天设置的密码，openssh要检查这个，dropbear不检查
+secs=$(date +%s)
+days=$((secs / 86400))
+sed -e "s/:0:0:99999:/:${days}:0:99999:/g"  -i /etc/shadow
 
 #sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
