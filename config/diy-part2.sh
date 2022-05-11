@@ -29,3 +29,4 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-ar
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
+git clone https://github.com/kenzok8/small-package/tree/main/luci-app-ssr-plus package/luci-app-ssr-plus
