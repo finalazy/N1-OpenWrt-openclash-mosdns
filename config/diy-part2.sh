@@ -20,6 +20,8 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 # Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/luci-app-amlogic
 
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
+
 svn co https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 
 svn co https://github.com/chenhw2/luci-app-aliddns.git package/feeds/luci-app-aliddns
