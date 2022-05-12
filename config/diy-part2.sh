@@ -20,22 +20,9 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 # Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/luci-app-amlogic
 
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
-
 svn co https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 
 svn co https://github.com/chenhw2/luci-app-aliddns.git package/feeds/luci-app-aliddns
-
-# Add luci-app-ssr-plus
-pushd package/lean
-git clone --depth=1 https://github.com/fw876/helloworld
-cat > helloworld/luci-app-ssr-plus/root/etc/ssrplus/black.list << EOF
-services.googleapis.cn
-googleapis.cn
-heroku.com
-githubusercontent.com 
-EOF
-popd
 
 rm -rf feeds/luci/themes/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
