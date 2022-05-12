@@ -24,11 +24,19 @@ svn co https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclas
 
 svn co https://github.com/chenhw2/luci-app-aliddns.git package/feeds/luci-app-aliddns
 
+# Add luci-app-ssr-plus
+pushd package/lean
+git clone --depth=1 https://github.com/fw876/helloworld
+cat > helloworld/luci-app-ssr-plus/root/etc/ssrplus/black.list << EOF
+services.googleapis.cn
+googleapis.cn
+heroku.com
+githubusercontent.com 
+EOF
+popd
+
 rm -rf feeds/luci/themes/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
-
-rm -rf package/helloworld
-git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
