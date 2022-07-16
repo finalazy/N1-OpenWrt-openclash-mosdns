@@ -5,7 +5,7 @@ sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci
 sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/autocore/Makefile
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.31.88/g' package/base-files/files/bin/config_generate
 
 # Modify default root's password（FROM 'password'[$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.] CHANGE TO 'your password'）
 #sed -i 's/root::0:0:99999:7:::/root:$1$yMQfLKxB$gtGxa4n2QGmgIKjUB7q3m.:0:0:99999:7:::/g' /etc/shadow
