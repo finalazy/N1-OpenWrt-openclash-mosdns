@@ -1,7 +1,7 @@
 name: Build OpenWrt for N1
 
-# on:
-#   workflow_dispatch:
+on:
+  workflow_dispatch:
 #   schedule:
 #     - cron: '0 2 * * *'
 
