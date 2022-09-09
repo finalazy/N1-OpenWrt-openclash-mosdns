@@ -8,7 +8,7 @@ sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/auto
 sed -i 's/192.168.1.1/192.168.5.88/g' package/base-files/files/bin/config_generate
 
 # Modify default root's password（FROM 'password'[$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.] CHANGE TO 'your password'）
-#sed -i 's/root::0:0:99999:7:::/root:$1$yMQfLKxB$gtGxa4n2QGmgIKjUB7q3m.:0:0:99999:7:::/g' /etc/shadow
+#sed -i 's/root::0:0:99999:7:::/root:$1$yMQfLKxB$gtGxa4n2QGmgIKjUB7q3m.:0:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
 
 #这代表是哪一天设置的密码，openssh要检查这个，dropbear不检查
 #secs=$(date +%s)
