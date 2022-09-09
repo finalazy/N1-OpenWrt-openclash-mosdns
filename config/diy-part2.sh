@@ -17,8 +17,7 @@ sed -i 's/192.168.1.1/192.168.5.88/g' package/base-files/files/bin/config_genera
 
 #sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
-# Add luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk package/luci-app-amlogic
+
 
 svn co https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
 
