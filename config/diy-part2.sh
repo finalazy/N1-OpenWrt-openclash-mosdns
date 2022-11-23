@@ -16,4 +16,6 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-ar
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 #阿里云web dav
 git clone https://github.com/messense/aliyundrive-webdav.git package/lean/luci-app-aliyundrive-webdav
+#adguardhome
+git clone https://github.com/AdguardTeam/AdGuardHome.git package/lean/luci-app-adguardhome
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
