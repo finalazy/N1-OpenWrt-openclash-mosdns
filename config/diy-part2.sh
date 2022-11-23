@@ -8,6 +8,7 @@ sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/auto
 sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generate
 
 svn co https://github.com/vernesong/OpenClash.git package/feeds/luci-app-openclash
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/feeds/luci-app-passwall
 
 svn co https://github.com/chenhw2/luci-app-aliddns.git package/feeds/luci-app-aliddns
 
