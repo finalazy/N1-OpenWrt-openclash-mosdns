@@ -13,7 +13,7 @@ svn co https://github.com/chenhw2/luci-app-aliddns.git package/lean/luci-app-ali
 
 rm -rf feeds/luci/themes/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
-git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 #阿里云web dav
 git clone https://github.com/messense/aliyundrive-webdav.git package/lean/luci-app-aliyundrive-webdav
 #adguardhome
