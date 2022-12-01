@@ -1,5 +1,5 @@
 # Modify some code adaptation
-sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
+#sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
 # Add autocore support for armvirt
 sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/autocore/Makefile
 # Modify default IP
@@ -18,7 +18,9 @@ rm -rf feeds/luci/themes/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 #passwall
-src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
-src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/lean/passwall_package
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/lean/passwall
+cp -rf ./package/lean/passwall_package/* ./package/lean/passwall
+rm -rf ./package/lean/passwall_package
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
