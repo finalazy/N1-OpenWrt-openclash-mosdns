@@ -10,7 +10,7 @@ git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-al
 #adguardhome
 git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 #openclash
-#git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 #阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
 #更换默认argon主题
