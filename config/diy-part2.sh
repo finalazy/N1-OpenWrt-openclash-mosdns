@@ -10,7 +10,7 @@ git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-al
 #adguardhome
 git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 #openclash
-git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+#git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 #阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
 #更换默认argon主题
@@ -20,7 +20,5 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-th
 #passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/passwall
-#cp -rf ./package/lean/passwall_package/* package/passwall
-#rm -rf ./package/lean/passwall_package
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
