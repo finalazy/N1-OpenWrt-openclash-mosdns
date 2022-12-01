@@ -17,5 +17,8 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 rm -rf feeds/luci/themes/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+#passwall
+src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
+src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
