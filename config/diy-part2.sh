@@ -20,7 +20,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-th
 #passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/lean/passwall_package
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/lean/passwall
-cp -rf ./package/lean/passwall_package/* ./package/lean/passwall
-rm -rf ./package/lean/passwall_package
+#cp -rf ./package/lean/passwall_package/* ./package/lean/passwall
+#rm -rf ./package/lean/passwall_package
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
