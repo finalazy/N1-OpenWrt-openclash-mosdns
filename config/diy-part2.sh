@@ -18,9 +18,9 @@ rm -rf feeds/luci/themes/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 #passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/lean/passwall_package
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/lean/passwall
-#cp -rf ./package/lean/passwall_package/* ./package/lean/passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/passwall
+#cp -rf ./package/lean/passwall_package/* package/passwall
 #rm -rf ./package/lean/passwall_package
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
