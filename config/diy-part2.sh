@@ -27,7 +27,6 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-th
 #git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/passwall
 
 #ssr plus
-sed -i "/helloworld/d" "feeds.conf.default"
-echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
