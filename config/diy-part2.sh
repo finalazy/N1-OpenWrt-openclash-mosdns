@@ -23,8 +23,8 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-ar
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
 #passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
+#git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/passwall
 
 #ssr plus
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
