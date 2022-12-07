@@ -33,7 +33,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-th
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
 # docker
-git clone https://github.com/lisaac/luci-lib-docker.git ./feeds/luci/collections/luci-lib-docker
+git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
