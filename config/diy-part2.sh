@@ -5,8 +5,8 @@ sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/auto
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generate
 
-src-git kenzo https://github.com/kenzok8/openwrt-packages
-src-git small https://github.com/kenzok8/small
+git clone https://github.com/kenzok8/openwrt-packages kenzo
+git clone https://github.com/kenzok8/small small
 
 # => 更换默认argon主题
 rm -rf feeds/luci/themes/luci-theme-argon
