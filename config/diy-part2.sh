@@ -13,9 +13,6 @@ sed -i "s|https.*/OpenWrt|https://github.com/cjlhll/N1-OpenWrt|g" package/luci-a
 # 2.Set the keywords of Tags in your github.com Releases
 sed -i "s|ARMv8|openwrt|g" package/luci-app-amlogic/root/etc/config/amlogic
 
-# 3.Set the suffix of the OPENWRT files in your github.com Releases
-sed -i "s|.img.gz|.img.gz|g" package/luci-app-amlogic/root/etc/config/amlogic
-
 
 # => 阿里云web dav
 git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
