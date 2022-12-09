@@ -17,4 +17,4 @@ config timeserver 'ntp'
 config led
 	option sysfs 'n1:white:status'
 	option trigger 'none'
-	option default '0'
+	option default '1'
