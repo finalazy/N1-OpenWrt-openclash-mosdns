@@ -7,6 +7,15 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 
 # Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+# 1.Set the download repository of the OpenWrt files to your github.com
+sed -i "s|https.*/OpenWrt|https://github.com/cjlhll/N1-OpenWrt|g" package/luci-app-amlogic/root/etc/config/amlogic
+
+# 2.Set the keywords of Tags in your github.com Releases
+sed -i "s|ARMv8|openwrt|g" package/luci-app-amlogic/root/etc/config/amlogic
+
+# 3.Set the suffix of the OPENWRT files in your github.com Releases
+sed -i "s|.img.gz|.img.gz|g" package/luci-app-amlogic/root/etc/config/amlogic
+
 
 # => 阿里云web dav
 git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
