@@ -5,27 +5,14 @@ sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/auto
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generate
 
-# Add luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-# 1.Set the download repository of the OpenWrt files to your github.com
-sed -i "s|https.*/OpenWrt|https://github.com/cjlhll/N1-OpenWrt|g" package/luci-app-amlogic/root/etc/config/amlogic
-
-# 2.Set the keywords of Tags in your github.com Releases
-sed -i "s|ARMv8|openwrt|g" package/luci-app-amlogic/root/etc/config/amlogic
-
-
 # => 阿里云web dav
 git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
-
 # => adguardhome
 git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
-
 # => 阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
-
 # => ssr plus
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
-
 # => dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 
