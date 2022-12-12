@@ -10,9 +10,11 @@ git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-al
 # => 阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
 # => openclash
-git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+#git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 # => dockerman
-#git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+# => passwall2
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package/luci-app-passwall2
 
 # => 更换默认argon主题
 rm -rf feeds/luci/themes/luci-theme-argon
