@@ -9,14 +9,10 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
 # => 阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
-# => openclash
-git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 # => dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 # => vssr
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
-# => ssr plus
-git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
 # => 更换默认argon主题
 rm -rf feeds/luci/themes/luci-theme-argon
