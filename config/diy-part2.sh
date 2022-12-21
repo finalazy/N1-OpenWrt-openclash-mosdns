@@ -17,7 +17,7 @@ git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-al
 # => 阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
 # => dockerman
-#git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 # => ssr plus
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
