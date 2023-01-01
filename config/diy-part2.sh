@@ -19,8 +19,9 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 # => dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 
-# => openclash
-git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+# => passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/passwall
 
 # => 更换默认argon主题
 rm -rf feeds/luci/themes/luci-theme-argon
