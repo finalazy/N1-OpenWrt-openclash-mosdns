@@ -13,7 +13,10 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 #sed -i "s|ARMv8|openwrt|g" package/luci-app-amlogic/root/etc/config/amlogic
 
 # => 阿里云web dav
-git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
+#git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
+# => alist
+git clone https://github.com/sbwml/luci-app-alist package/alist
+
 # => 阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
 # => dockerman
