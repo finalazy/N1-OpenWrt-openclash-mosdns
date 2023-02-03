@@ -94,7 +94,7 @@ jobs:
       uses: ophub/flippy-openwrt-actions@main
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
-        KERNEL_VERSION_NAME: 5.4.228
+        KERNEL_VERSION_NAME: 5.15.91
         PACKAGE_SOC: s905d
         SW_FLOWOFFLOAD: 0
         HW_FLOWOFFLOAD: 0
