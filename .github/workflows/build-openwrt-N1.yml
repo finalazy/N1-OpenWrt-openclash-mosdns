@@ -125,7 +125,13 @@ jobs:
           IP: 192.168.5.2
           账户: root
           密码: password
-
+          
+    - name: Delete workflow runs
+      uses: cjlhll/delete-workflow-runs@main
+      with:
+        retain_days: 1
+        keep_minimum_runs: 3
+        
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.2.0
       if: env.PACKAGED_STATUS == 'success' && !cancelled()
