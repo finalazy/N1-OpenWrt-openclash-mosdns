@@ -4,8 +4,6 @@
 sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/autocore/Makefile
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generate
-#设置默认密码
-sed -i 's/root::0:0:99999:7:::/root:$1$Iwy0nrJv$ptWfb1lLhPvlSwxGh3cnw.:0:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
 
 # Add luci-app-amlogic
 #svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
