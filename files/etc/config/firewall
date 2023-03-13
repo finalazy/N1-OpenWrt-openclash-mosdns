@@ -1,0 +1,22 @@
+
+config defaults
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'REJECT'
+	option fullcone '2'
+
+config zone
+	option name 'lan'
+	list network 'lan'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'ACCEPT'
+
+config include
+	option path '/etc/firewall.user'
+
+config include 'openclash'
+	option type 'script'
+	option path '/var/etc/openclash.include'
+	option reload '1'
+
