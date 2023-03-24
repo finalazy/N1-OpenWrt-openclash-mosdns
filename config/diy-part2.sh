@@ -4,7 +4,8 @@
 sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/autocore/Makefile
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generate
-
+echo '修改机器名称'
+sed -i 's/OpenWrt/Phicomm-N1/g' package/base-files/files/bin/config_generate
 # Add luci-app-amlogic
 #svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
 # 1.Set the download repository of the OpenWrt files to your github.com
