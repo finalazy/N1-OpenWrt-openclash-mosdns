@@ -7,7 +7,7 @@ sed -i 's/TARGET_rockchip/TARGET_rockchip\|\|TARGET_armvirt/g' package/lean/auto
 sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generate
 
 #修改密码
-sed -i 's/root::0:0:99999:7:::/root:$1$KVHNuqbv$4X2BPbtsXn2AApknHIn38.:0:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/root:$1$KVHNuqbv$4X2BPbtsXn2AApknHIn38.:19440:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
 
 # Add luci-app-amlogic
 #svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
