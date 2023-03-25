@@ -34,10 +34,11 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 # => openclash
 git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 
-# => 更换默认argon主题
+# => 删除默认argon主题
 rm -rf feeds/luci/themes/luci-theme-argon
 
-#argon主题
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+#主题
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone https://github.com/gngpp/luci-theme-design.git  package/luci-theme-design
 
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-design/g' ./feeds/luci/collections/luci/Makefile
