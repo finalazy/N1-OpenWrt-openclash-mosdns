@@ -9,13 +9,10 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 #修改密码
 sed -i 's/^root:.*:/root:$1$KVHNuqbv$4X2BPbtsXn2AApknHIn38.:0:0:99999:7:::/g' package/base-files/files/etc/shadow
 
-# Add luci-app-amlogic
-#svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-# 1.Set the download repository of the OpenWrt files to your github.com
-#sed -i "s|https.*/OpenWrt|https://github.com/cjlhll/N1-OpenWrt|g" package/luci-app-amlogic/root/etc/config/amlogic
-# 2.Set the keywords of Tags in your github.com Releases
-#sed -i "s|ARMv8|openwrt|g" package/luci-app-amlogic/root/etc/config/amlogic
 #--------------------------------------
+# Add luci-app-amlogic
+svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+
 # 1.设置OpenWrt 文件的下载仓库
 sed -i "s|amlogic_firmware_repo.*|amlogic_firmware_repo 'https://github.com/cjlhll/N1-OpenWrt'|g" package/luci-app-amlogic/root/etc/config/amlogic
 
