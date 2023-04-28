@@ -15,6 +15,13 @@ sed -i 's/^root:.*:/root:$1$KVHNuqbv$4X2BPbtsXn2AApknHIn38.:0:0:99999:7:::/g' pa
 #sed -i "s|https.*/OpenWrt|https://github.com/cjlhll/N1-OpenWrt|g" package/luci-app-amlogic/root/etc/config/amlogic
 # 2.Set the keywords of Tags in your github.com Releases
 #sed -i "s|ARMv8|openwrt|g" package/luci-app-amlogic/root/etc/config/amlogic
+#--------------------------------------
+# 1.设置OpenWrt 文件的下载仓库
+sed -i "s|amlogic_firmware_repo.*|amlogic_firmware_repo 'https://github.com/cjlhll/N1-OpenWrt'|g" package/luci-app-amlogic/root/etc/config/amlogic
+
+# 2.设置 Releases 里 Tags 的关键字
+sed -i "s|ARMv8|openwrt|g" package/luci-app-amlogic/root/etc/config/amlogic
+#--------------------------------------
 
 # => 阿里云web dav
 #git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
