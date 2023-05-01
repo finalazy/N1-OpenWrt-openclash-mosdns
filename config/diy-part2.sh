@@ -25,7 +25,7 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 # => openclash
 #git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 
-# => passwall
+# => passwall2
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
 git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 
