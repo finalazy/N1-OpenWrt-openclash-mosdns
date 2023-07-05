@@ -39,6 +39,9 @@ fi
 # 修改 /etc/docker/daemon.json 文件中的 data-root 参数
 sed -i 's/"data-root": "\(.*\)"/"data-root": "\/opt\/docker\/"/' /etc/docker/daemon.json
 
+# 修改 /etc/config/dockerd 文件中的 auto_start 参数
+sed -i 's/option auto_start .*/option auto_start '\''1'\''/' /etc/config/dockerd
+
 #docker 修改end--------------------------->
 
 # => 阿里云web dav
