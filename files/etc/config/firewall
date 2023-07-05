@@ -15,8 +15,3 @@ config zone
 config include
 	option path '/etc/firewall.user'
 
-config include 'openclash'
-	option type 'script'
-	option path '/var/etc/openclash.include'
-	option reload '1'
-
