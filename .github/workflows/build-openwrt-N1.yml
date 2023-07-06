@@ -66,6 +66,10 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
+        
+    - name: create format_and_mount_hdd
+      run: |
+        chmod +x openwrt/files/etc/init.d/format_and_mount_hdd
 
     - name: Download package
       id: package
