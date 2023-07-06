@@ -34,6 +34,8 @@ if [ -n "$U_DISK" ]; then
     ) | fdisk "$U_DISK"
 
     mkfs.ext4 "${U_DISK}1"
+    # 打印 U_DISK 变量
+    echo "U_DISK: $U_DISK"
 fi
 
 # 修改 /etc/docker/daemon.json 文件中的 data-root 参数
