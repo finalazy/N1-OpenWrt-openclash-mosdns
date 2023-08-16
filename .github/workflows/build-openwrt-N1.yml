@@ -20,6 +20,21 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+
+    - name: Display Current Time
+      run: |
+        echo "Current time:"
+        date
+
+    - name: Set timezone to Beijing
+      run: |
+        sudo timedatectl set-timezone Asia/Shanghai
+        date
+
+    - name: Display Beijing Time
+      run: |
+        echo "Current time in Beijing:"
+        date
       
     - name: Initialization environment
       env:
