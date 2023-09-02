@@ -3,7 +3,7 @@ name: Build OpenWrt for N1
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 20 * * *"
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
