@@ -24,8 +24,11 @@ git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dock
 #git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 
 # => passwall2
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git -b main package/passwall_package
-git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages.git -b main package/passwall_package
+#git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
+
+# => ssr plus
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
 # => 删除默认argon主题
 rm -rf feeds/luci/themes/luci-theme-argon
