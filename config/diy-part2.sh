@@ -23,9 +23,9 @@ git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dock
 # => openclash
 #git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 
-# => passwall2
+# => passwall
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git -b main package/passwall_package
-git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 # => ssr plus
 #git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
