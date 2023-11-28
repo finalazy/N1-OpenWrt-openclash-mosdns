@@ -68,7 +68,7 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
         echo "COMPILE_STARTINGTIME=$(date +"%Y.%m.%d.%H%M")" >> $GITHUB_ENV
-        go get -u github.com/go-log/log/slog
+        
     - name: Check space usage
       if: (!cancelled())
       run: df -hT
