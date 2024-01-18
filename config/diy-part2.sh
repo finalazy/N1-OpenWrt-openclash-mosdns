@@ -15,10 +15,10 @@ git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/l
 git clone https://github.com/sbwml/luci-app-alist package/alist
 
 # => 阿里云web dav
-git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
+#git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
 
 # => 阿里ddns
-#git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
+git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
 
 # => dockerman
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
