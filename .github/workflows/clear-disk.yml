@@ -1,0 +1,38 @@
+name: Clean Disk with Disk Space Check
+
+on:
+  workflow_run:
+    workflows: clear disk  # 替换为你的工作流名称
+    types:
+      - completed
+
+jobs:
+  check-disk-space:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Check Disk Space
+      run: |
+        # 进入项目根目录
+        cd $GITHUB_WORKSPACE
+
+        # 打印当前磁盘空间信息
+        df -h
+
+    - name: Clean Disk
+      run: |
+        # 进入项目根目录
+        cd $GITHUB_WORKSPACE
+
+        # 删除不需要的文件或目录
+        # 例如，删除所有文件
+        rm -rf *
+
+        # 或者删除特定文件/目录
+        # rm -rf path/to/your/file_or_directory
+
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
