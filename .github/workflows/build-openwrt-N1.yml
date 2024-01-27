@@ -33,7 +33,13 @@ jobs:
         haskell: true
         large-packages: true
         swap-storage: true
-    
+        
+    - name: Update Rustup
+      run: |
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        export PATH="$HOME/.cargo/bin:$PATH"
+        rustup update
+          
     - name: Checkout
       uses: actions/checkout@main
 
