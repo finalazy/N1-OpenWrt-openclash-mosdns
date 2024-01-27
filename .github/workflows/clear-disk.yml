@@ -1,6 +1,7 @@
 name: Clean Disk with Disk Space Check
 
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: clear disk  # 替换为你的工作流名称
     types:
