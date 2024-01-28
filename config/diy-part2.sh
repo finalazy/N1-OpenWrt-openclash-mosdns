@@ -9,9 +9,6 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 #修改密码
 sed -i 's/^root:.*:/root:$1$KVHNuqbv$4X2BPbtsXn2AApknHIn38.:0:0:99999:7:::/g' package/base-files/files/etc/shadow
 
-#解决报错 2024年1月27日
-sed -i 's/TARGET_CFLAGS += -DHAVE_MAP_SYNC/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/' feeds/packages/utils/xfsprogs/Makefile
-
 # => alist
 #rm -rf feeds/packages/lang/golang
 #git clone https://github.com/sbwml/packages_lang_golang -b 21.x feeds/packages/lang/golang
@@ -19,7 +16,6 @@ sed -i 's/TARGET_CFLAGS += -DHAVE_MAP_SYNC/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_L
 
 # => 阿里云web dav
 git clone https://github.com/messense/aliyundrive-webdav.git package/luci-app-aliyundrive-webdav
-sed -i 's/stripped/release/g' feeds/packages/multimedia/aliyundrive-webdav/Makefile
 
 # => 阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
@@ -42,5 +38,9 @@ rm -rf feeds/luci/themes/luci-theme-argon
 
 #主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
+
+# 临时修复acpid,xfsprogs,aliyundrive-webdav
+sed -i 's#flto#flto -D_LARGEFILE64_SOURCE#g' feeds/packages/utils/acpid/Makefile
+sed -i 's#SYNC#SYNC -D_LARGEFILE64_SOURCE#g' feeds/packages/utils/xfsprogs/Makefile
+sed -i 's/stripped/release/g' feeds/packages/multimedia/aliyundrive-webdav/Makefile
