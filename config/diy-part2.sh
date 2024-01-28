@@ -12,7 +12,8 @@ sed -i 's/^root:.*:/root:$1$KVHNuqbv$4X2BPbtsXn2AApknHIn38.:0:0:99999:7:::/g' pa
 # => 删除默认argon主题
 rm -rf feeds/luci/themes/luci-theme-argon
 
-git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 #主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
