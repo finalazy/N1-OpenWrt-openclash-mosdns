@@ -41,7 +41,7 @@ jobs:
         rustup update
           
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@v3
 
     - name: Display Current Time
       run: |
