@@ -21,7 +21,7 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 
 # => OpenClash
-git clone https://github.com/vernesong/OpenClash.git package/OpenClash
+git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 
 # => ssr plus
 #git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
