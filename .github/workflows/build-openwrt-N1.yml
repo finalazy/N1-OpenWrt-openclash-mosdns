@@ -164,7 +164,7 @@ jobs:
           * 固件基础信息
           IP: 192.168.5.2
           账户: root
-          密码: cj1992728
+          密码: *********
         
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.2.1
