@@ -170,7 +170,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@v0.2.1
       if: env.PACKAGED_STATUS == 'success' && !cancelled()
       with:
-        keep_latest: 2
+        keep_latest: 1
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
