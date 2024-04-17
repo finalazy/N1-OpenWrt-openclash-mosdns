@@ -17,9 +17,6 @@ git clone https://github.com/sbwml/luci-app-alist package/alist
 # => 阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
 
-# => dockerman
-git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
-
 # => OpenClash
 git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 
