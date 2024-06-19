@@ -20,6 +20,10 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 # => OpenClash
 git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 
+# => mosdns
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+
 # => 删除默认argon主题
 rm -rf feeds/luci/themes/luci-theme-argon
 
